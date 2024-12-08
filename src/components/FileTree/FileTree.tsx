@@ -30,7 +30,7 @@ export const FileTree = () => {
               href="https://github.com/kaplayjs/kaplayground/wiki"
               target="_blank"
             >
-              Wiki (?)
+              Docs
             </a>
           </li>
           <li className="link link-primary">
