@@ -1,10 +1,9 @@
+import { themes } from 'daisyui/src/theming/themes';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
-  plugins: [
-    //@ts-ignore
-    require('daisyui'),
-  ],
+  plugins: [require('daisyui')],
   theme: {
     extend: {},
   },
@@ -12,11 +11,11 @@ export default {
     themes: [
       {
         Spiker: {
-          ...require('daisyui/src/theming/themes')['dim'],
+          ...themes['dim'],
           primary: '#6ba672',
         },
         Ghostiny: {
-          ...require('daisyui/src/theming/themes')['emerald'],
+          ...themes['emerald'],
         },
       },
     ],
