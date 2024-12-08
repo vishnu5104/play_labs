@@ -20,26 +20,6 @@ export default defineConfig({
                 },
             ],
         }),
-        {
-            name: "kaplay",
-            buildStart() {
-                const examplesPath = process.env.EXAMPLES_PATH;
-
-                if (examplesPath) {
-                    generateExamples(
-                        path.join(import.meta.dirname, examplesPath),
-                    );
-                } else generateExamples();
-            },
-            watchChange() {
-                const examplesPath = process.env.EXAMPLES_PATH;
-
-                if (examplesPath) {
-                    generateExamples(
-                        path.join(import.meta.dirname, examplesPath),
-                    );
-                } else generateExamples();
-            },
-        },
+       
     ],
 });
