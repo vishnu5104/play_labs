@@ -8,6 +8,7 @@ import { generateExamples } from "./scripts/examples.js";
 export default defineConfig({
     plugins: [
         react(),
+        
         viteStaticCopy({
             targets: [
                 {
@@ -22,4 +23,5 @@ export default defineConfig({
         }),
        
     ],
+    base: '/',
 });
