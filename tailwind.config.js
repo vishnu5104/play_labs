@@ -7,19 +7,4 @@ export default {
   theme: {
     extend: {},
   },
-  daisyui: {
-    themes: [
-      {
-        Spiker: {
-          ...themes['dim'],
-          primary: '#6ba672',
-        },
-        Ghostiny: {
-          ...themes['emerald'],
-        },
-      },
-    ],
-    darkTheme: 'Spiker',
-    logs: false,
-  },
 };
